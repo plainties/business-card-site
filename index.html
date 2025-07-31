@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Business Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="brand">👤 My Name</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="vcard.vcf" download>📥 vCard</a></li>
+      </ul>
+      <button id="darkModeToggle">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>Hello, I’m [Your Name]</h1>
+      <p>This is my digital business card.</p>
+    </section>
+
+    <section id="map">
+      <h2>📍 Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section id="contact">
+      <h2>📬 Contact Me</h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

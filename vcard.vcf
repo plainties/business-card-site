@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Your Name
+TEL;TYPE=CELL:+1234567890
+EMAIL:you@example.com
+ORG:Your Company
+TITLE:Web Developer
+ADR:;;123 Main St;City;State;12345;Country
+URL:https://yourwebsite.com
+END:VCARD
