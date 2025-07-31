@@ -5,6 +5,34 @@
   box-sizing: border-box;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between logo and name */
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap; /* prevent line break */
+}
+
+@media (max-width: 500px) {
+  .logo {
+    height: 30px;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+}
+
 #darkModeToggle {
   padding: 0.25rem;
   font-size: 1.2rem;
@@ -18,16 +46,18 @@
 
 body {
   font-family: sans-serif;
-  background: url('images/background.jpg') no-repeat center center fixed;
+  background: url('images/IMG_0067.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #fff;
-  transition: background-color 0.3s ease;
+  color: #ffffff; /* bright white for better contrast on dark or photo backgrounds */
 }
 
 .dark-mode {
   background-color: #121212;
-  color: #f1f1f1;
-  background-blend-mode: multiply;
+  color: #f5f5f5; /* light gray text for readability */
+}
+
+.dark-mode a {
+  color: #66ccff; /* brighter blue for links */
 }
 
 header {
@@ -98,10 +128,23 @@ form {
   flex-direction: column;
 }
 
+body,
 input,
 textarea,
 button {
   width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input, textarea {
+  background-color: rgba(255, 255, 255, 0.85); /* light background */
+  color: #000; /* dark text */
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: rgba(30, 30, 30, 0.9); /* dark field in dark mode */
+  color: #f5f5f5;
 }
 
 #hero {
@@ -149,9 +192,23 @@ button {
   padding: 0.5rem 1rem;
   border: none;
   background-color: #008cff;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.dark-mode button {
+  background-color: #00aaff; /* brighter blue in dark mode */
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dark-mode a {
+  color: #66ccff;
 }
 
 footer {
