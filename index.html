@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Business Card</title>
+      <title>Plain Sight Projects | Property & People Solutions</title>
+      <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="brand">👤 My Name</div>
+      <div class="brand">
+        <img src="images/psp logo final.png" alt="Plain Sight Projects Logo" style="height: 40px; vertical-align: middle;" />
+        <span style="margin-left: 10px;">Plain Sight Projects</span>
+      </div>
       <button class="hamburger" id="hamburger">&#9776;</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
@@ -22,8 +29,9 @@
 
   <main>
     <section id="about">
-      <h1>Hello, I’m [Your Name]</h1>
-      <p>This is my digital business card.</p>
+      <h1>Welcome to Plain Sight Projects</h1>
+      <p><em>you, covered.</em></p>
+      <p>We specialize in <strong>Real Estate</strong> and <strong>Recruitment</strong> services across the UK. Whether you're hiring, relocating, or expanding — we've got you covered.</p>
     </section>
 
     <section id="map">
@@ -47,8 +55,44 @@
         <button type="submit">Send</button>
       </form>
     </section>
+
+    <section id="hero">
+      <div class="hero-text">
+        <h1>Plain Sight Projects</h1>
+        <p>Real Estate & Recruitment. You, covered.</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>What We Do</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>🏠 Real Estate</h3>
+          <p>Helping clients buy, sell, and rent residential and commercial properties with confidence.</p>
+        </div>
+        <div class="service-card">
+          <h3>👥 Recruitment</h3>
+          <p>Connecting top talent with the right opportunities across industries and regions.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
 </body>
+<footer>
+  <p>Follow us:</p>
+  <div class="social-links">
+    <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="mailto:info@plainsightpro.co.uk" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</footer>
 </html>
