@@ -18,20 +18,23 @@
 <body>
   <header>
     <nav class="navbar">
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks">
+        &#9776;
+      </button>
+
       <div class="brand">
         <img src="images/psp logo final.png" alt="Plain Sight Projects Logo" class="logo" />
         <span class="brand-name">Plain Sight Projects</span>
       </div>
-      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks">
-  &#9776;
-</button>
+      
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
       <button id="darkModeToggle" aria-label="Toggle dark mode">
   <i class="fas fa-moon"></i>
-</button>
+      </button>
     </nav>
   </header>
 
@@ -50,8 +53,14 @@
     </section>
 
     <section id="hero">
-      <div class="map-container" style="margin-bottom: 2rem;">
-       <h2><i class="fas fa-map-marker-alt"></i> Location</h2>
+  <div class="hero-wrapper">
+    <div class="hero-text">
+      <h1>Plain Sight Projects</h1>
+      <p>Real Estate & Recruitment</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+    <div class="map-container">
+      <h2><i class="fas fa-map-marker-alt"></i> Location</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE"
         width="300"
@@ -60,14 +69,9 @@
         allowfullscreen=""
         loading="lazy"
       ></iframe>
-     </div>
-
-     <div class="hero-text">
-        <h1>Plain Sight Projects</h1>
-        <p>Real Estate & Recruitment. You, covered.</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
-     </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <section id="services">
       <h2>What We Do</h2>
@@ -99,6 +103,9 @@
   <a href="vcard.vcf" download>
     <i class="fas fa-download"></i> vCard
   </a>
+  <a href="mailto:info@plainsightpro.co.uk" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+  </a>
 </div>
     </section>
   </main>
@@ -112,9 +119,6 @@
     </a>
     <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
       <i class="fab fa-instagram"></i>
-    </a>
-    <a href="mailto:info@plainsightpro.co.uk" aria-label="Email">
-      <i class="fas fa-envelope"></i>
     </a>
   </div>
 </footer>
