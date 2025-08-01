@@ -177,41 +177,47 @@ input, textarea {
 #about {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.4); /* subtle overlay for contrast */
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   backdrop-filter: blur(4px);
-  border-radius: 8px;
+  border-radius: 10px;
   max-width: 900px;
-  margin: 2rem auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 4rem auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
 }
 
 #about h1 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   margin-bottom: 1rem;
   font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 #about em {
   display: block;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: #ccc;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #cccccc;
   font-style: italic;
 }
 
 #about p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0e0e0;
 }
 
 #about strong {
-  color: #66ccff; /* highlight key words */
+  color: #66ccff;
+  font-weight: bold;
 }
 
 #about {
   opacity: 0;
-  animation: fadeIn 1.2s ease forwards;
+  animation: fadeIn 3s ease forwards;
 }
 
 @keyframes fadeIn {
