@@ -209,6 +209,17 @@ input, textarea {
   color: #66ccff; /* highlight key words */
 }
 
+#about {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 .cta-button {
   margin-top: 2.5rem;        /* Pushes button down */
   background: #008cff;
@@ -281,4 +292,3 @@ footer .social-links {
 .social-links a:hover {
   color: #008cff; /* Light blue on hover */
 }
-
