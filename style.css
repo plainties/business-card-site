@@ -111,8 +111,17 @@ header {
   }
 
   .hamburger {
-    display: block;
-  }
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  width: 40px;      /* narrow button */
+  height: 40px;
+  padding: 0;       /* remove extra padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-container {
@@ -159,6 +168,45 @@ input, textarea {
 
 .hero-text h1 {
   font-size: 3rem;
+}
+
+#hero .map-container {
+  text-align: center;
+}
+
+#about {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); /* subtle overlay for contrast */
+  color: #fff;
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+#about em {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#about strong {
+  color: #66ccff; /* highlight key words */
 }
 
 .cta-button {

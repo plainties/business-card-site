@@ -36,8 +36,9 @@
       <p>We specialize in <strong>Real Estate</strong> and <strong>Recruitment</strong> services across the UK. Whether you're hiring, relocating, or expanding — we've got you covered.</p>
     </section>
 
-    <section id="map">
-      <h2>📍 Location</h2>
+    <section id="hero">
+      <div class="map-container" style="margin-bottom: 2rem;">
+       <h2>📍 Location</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE"
         width="300"
@@ -46,26 +47,13 @@
         allowfullscreen=""
         loading="lazy"
       ></iframe>
-    </section>
+     </div>
 
-    <section id="contact">
-      <h2>📬 Contact Me</h2>
-      <div class="form-container">
-        <form name="contact" method="POST" data-netlify="true">
-         <input type="text" name="name" placeholder="Your Name" required />
-         <input type="email" name="email" placeholder="Your Email" required />
-         <textarea name="message" placeholder="Your Message" required></textarea>
-         <button type="submit">Send</button>
-       </form>
-      </div>
-    </section>
-
-    <section id="hero">
-      <div class="hero-text">
+     <div class="hero-text">
         <h1>Plain Sight Projects</h1>
         <p>Real Estate & Recruitment. You, covered.</p>
         <a href="#contact" class="cta-button">Get in Touch</a>
-      </div>
+     </div>
     </section>
 
     <section id="services">
@@ -79,6 +67,18 @@
           <h3>👥 Recruitment</h3>
           <p>Connecting top talent with the right opportunities across industries and regions.</p>
         </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>📬 Contact Me</h2>
+      <div class="form-container">
+        <form name="contact" method="POST" data-netlify="true">
+         <input type="text" name="name" placeholder="Your Name" required />
+         <input type="email" name="email" placeholder="Your Email" required />
+         <textarea name="message" placeholder="Your Message" required></textarea>
+         <button type="submit">Send</button>
+       </form>
       </div>
     </section>
   </main>
