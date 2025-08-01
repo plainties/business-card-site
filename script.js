@@ -7,6 +7,7 @@ if (hamburger && navLinks) {
     const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
     hamburger.setAttribute('aria-expanded', String(!isExpanded));
     navLinks.classList.toggle('active');
+    document.body.classList.toggle('nav-open');
   });
 }
 

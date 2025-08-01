@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css" />
   <script>
     if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark-mode');
+      document.body.classList.add('dark-mode');
     }
   </script>
 </head>
@@ -55,9 +55,6 @@
           <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
         <div class="about-image">
-          </div>
-        <div class="map-container">
-          <h2><i class="fas fa-map-marker-alt"></i> Location</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE"
             width="300"
@@ -67,8 +64,6 @@
             loading="lazy"
           ></iframe>
         </div>
-        </div>
-      </div>
     </section>
 
     <!-- Other sections here... -->
