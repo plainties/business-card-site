@@ -13,16 +13,15 @@ if (hamburger && navLinks) {
 // Dark mode toggle with persistence
 const darkToggle = document.getElementById('darkModeToggle');
 
-// Apply saved theme on load
-if (localStorage.getItem('theme') === 'dark') {
-  document.body.classList.add('dark-mode');
-}
+const setTheme = (mode) => {
+  document.body.classList.toggle('dark-mode', mode === 'dark');
+  localStorage.setItem('theme', mode);
+};
 
 if (darkToggle) {
   darkToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    const isDark = !document.body.classList.contains('dark-mode');
+    setTheme(isDark ? 'dark' : 'light');
   });
 }
 
