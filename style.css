@@ -5,6 +5,35 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 15px; /* 👈 Puts it on top-left */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 10px; /* Menu appears below the nav */
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    display: none;
+    border-radius: 6px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 /* Body & Dark Mode */
 body {
   font-family: sans-serif;
@@ -198,7 +227,7 @@ header {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 10px;
+    left: 10px;
     background-color: rgba(0,0,0,0.9);
     padding: 1rem;
     display: none;
