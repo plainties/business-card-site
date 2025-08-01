@@ -87,14 +87,18 @@
       <div class="form-container">
         <form name="contact" method="POST" data-netlify="true">
   <div class="form-row">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email" required />
   </div>
-  <textarea name="message" placeholder="Your Message" required></textarea>
+  <textarea name="message" placeholder="Message" required></textarea>
   <button type="submit">Send</button>
 </form>
       </div>
-      <i class="fas fa-download"></i> vCard
+      <div class="vcard-download">
+  <a href="vcard.vcf" download>
+    <i class="fas fa-download"></i> vCard
+  </a>
+</div>
     </section>
   </main>
 
