@@ -25,3 +25,20 @@ if (darkToggle) {
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
 }
+
+// Scroll animation for #about
+const aboutSection = document.getElementById('about');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+if (aboutSection) {
+  observer.observe(aboutSection);
+}
