@@ -289,20 +289,6 @@ textarea:focus {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .hero-wrapper {
-    flex-direction: row;
-    justify-content: center;
-    text-align: left;
-    gap: 4rem;
-  }
-
-  .hero-text,
-  .map-container {
-    flex: 1;
-  }
-}
-
 .about-wrapper {
   display: flex;
   flex-direction: column;
