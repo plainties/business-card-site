@@ -27,8 +27,8 @@ body {
   .hamburger {
     display: flex;
     position: absolute;
-    top: 16px;
-    left: 16px; /* 👈 Puts it on top-left */
+    top: 10px;
+    left: 10px; /* 👈 Puts it on top-left */
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 6px;
     cursor: pointer;
@@ -51,6 +51,17 @@ body {
 
   .nav-links.active {
     display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr;
+  }
+
+  .brand,
+  #darkModeToggle {
+    display: none;
   }
 }
 
