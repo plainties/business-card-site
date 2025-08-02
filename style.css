@@ -260,6 +260,10 @@ html.dark-mode footer {
 }
 
 @media (max-width: 768px) {
+  .mobile-break {
+    display: inline;
+  }
+
   .navbar {
     display: grid;
     grid-template-columns: 1fr auto 1fr; /* Left - Center - Right */
