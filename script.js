@@ -9,6 +9,15 @@ if (hamburger && navLinks) {
     navLinks.classList.toggle('active');
     document.body.classList.toggle('nav-open');
   });
+
+  // 👉 Close menu when a nav link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      document.body.classList.remove('nav-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
 }
 
 // Dark mode toggle with persistence
