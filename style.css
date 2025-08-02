@@ -261,7 +261,7 @@ html.dark-mode footer {
 
 @media (max-width: 768px) {
   .mobile-break {
-    display: inline;
+    display: block;
   }
 
   .navbar {
