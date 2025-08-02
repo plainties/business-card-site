@@ -365,7 +365,7 @@ html.dark-mode footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem; /* This controls spacing between text and button */
+  gap: 0.5rem; /* This controls spacing between text and button */
   text-align: left;
 }
 
