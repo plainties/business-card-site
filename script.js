@@ -26,8 +26,9 @@ if (darkToggle) {
   });
 }
 
-// Scroll animation for #about
+// Scroll animation for #about and #services
 const aboutSection = document.getElementById('about');
+const servicesSection = document.getElementById('services');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -39,6 +40,5 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.3
 });
 
-if (aboutSection) {
-  observer.observe(aboutSection);
-}
+if (aboutSection) observer.observe(aboutSection);
+if (servicesSection) observer.observe(servicesSection);
