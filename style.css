@@ -173,7 +173,8 @@ header {
    BUTTONS
 =========================== */
 .cta-button {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
+  display: inline-block;
   background-color: #66ccff;
   color: #000;
   border: none;
@@ -219,8 +220,9 @@ footer {
 @media (max-width: 768px) {
   .navbar {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr; /* Left - Center - Right */
     align-items: center;
+    position: relative;
   }
 
   .brand {
@@ -231,16 +233,27 @@ footer {
     display: none; /* Hide logo on mobile */
   }
 
+  .brand-name {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
   #darkModeToggle {
     justify-self: end;
-    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
   }
 
   .hamburger {
-    display: flex;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    justify-self: start;
+    position: relative;
+    top: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 6px;
     cursor: pointer;
