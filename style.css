@@ -284,27 +284,17 @@ footer {
 }
 
 @media (min-width: 769px) {
-  .services-grid {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .service-card {
-    flex: 1;
-    min-width: 250px;
-  }
-
-  .logo,
-  .hamburger {
-    display: none;
-  }
-
-  /* Center brand name horizontally */
+  /* Desktop nav layout */
   .navbar {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     position: relative;
+  }
+
+  .logo,
+  .hamburger {
+    display: none;
   }
 
   .brand {
@@ -317,12 +307,27 @@ footer {
     color: #fff;
     white-space: nowrap;
   }
+
   .nav-links {
     justify-self: start;
+    display: flex; /* Ensure horizontal layout */
+    gap: 1.5rem;    /* Space between links */
   }
 
-  /* Dark mode toggle aligned to right */
   #darkModeToggle {
     justify-self: end;
+  }
+
+  /* Services grid on desktop */
+  .services-grid {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Optional: better handling of narrow screens */
+  }
+
+  .service-card {
+    flex: 1;
+    min-width: 250px;
+    margin: 0 0.5rem;
   }
 }
