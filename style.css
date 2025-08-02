@@ -361,18 +361,21 @@ html.dark-mode footer {
 
   /* HERO INLINE */
   .hero-inline {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  text-align: left;
   gap: 2rem; /* Adds spacing between text and button */
+  text-align: left;
 }
 
 .hero-inline h1 {
   flex: 1;
-  font-size: 2.2rem;
   margin: 0;
-  line-height: 1.2;
+  font-size: 2.2rem;
+  white-space: nowrap; /* prevents wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cta-button {
