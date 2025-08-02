@@ -21,12 +21,13 @@ body.nav-open {
 /* ===========================
    DARK MODE
 =========================== */
-.dark-mode {
+html.dark-mode body {
   background-color: #121212;
+  background-image: none; /* optional: remove background image in dark mode */
   color: #f5f5f5;
 }
 
-.dark-mode a {
+html.dark-mode a {
   color: #66ccff;
 }
 
@@ -220,6 +221,27 @@ footer {
 
 .social-links a:hover {
   color: #66ccff;
+}
+
+/* ===========================
+   DARK MODE OVERRIDES
+=========================== */
+html.dark-mode #hero {
+  background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7));
+}
+
+html.dark-mode #services {
+  background: rgba(30, 30, 30, 0.8);
+  color: #f5f5f5;
+}
+
+html.dark-mode .service-card {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-mode footer {
+  background: rgba(18, 18, 18, 0.9);
+  color: #ccc;
 }
 
 /* ===========================

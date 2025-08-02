@@ -24,13 +24,13 @@ if (hamburger && navLinks) {
 const darkToggle = document.getElementById('darkModeToggle');
 
 const setTheme = (mode) => {
-  document.body.classList.toggle('dark-mode', mode === 'dark');
+  document.documentElement.classList.toggle('dark-mode', mode === 'dark');
   localStorage.setItem('theme', mode);
 };
 
 if (darkToggle) {
   darkToggle.addEventListener('click', () => {
-    const isDark = !document.body.classList.contains('dark-mode');
+    const isDark = !document.documentElement.classList.contains('dark-mode');
     setTheme(isDark ? 'dark' : 'light');
   });
 }
