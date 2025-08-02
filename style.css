@@ -125,13 +125,6 @@ header {
   cursor: pointer;
 }
 
-/* Show hamburger only on smaller screens */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-}
-
 /* Sections */
 #about, #hero {
   max-width: 900px;
@@ -185,7 +178,7 @@ header {
 
 /* About text */
 .about-text {
-  max-width: 900px;
+  max-width: 700px;
 }
 
 /* About image */
@@ -218,34 +211,6 @@ header {
   /* Hero stays stacked on desktop, but centers */
   .hero-wrapper {
     flex-direction: column; /* or row if you want side-by-side */
-  }
-}
-
-/* Navigation Mobile */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 10px;
-    background-color: rgba(0,0,0,0.9);
-    padding: 1rem;
-    display: none;
-    border-radius: 6px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: rgba(0,0,0,0.8);
-    border-radius: 6px;
-    cursor: pointer;
   }
 }
 
