@@ -254,6 +254,11 @@ html.dark-mode footer {
 /* ===========================
    RESPONSIVE (MOBILE STYLES)
 =========================== */
+/* Show line break only on mobile */
+.mobile-break {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navbar {
     display: grid;
@@ -380,7 +385,8 @@ html.dark-mode footer {
 
 .cta-button {
   flex-shrink: 0;
-  margin-top: 0;
+  margin-top: 0 !important;
+  margin-left: 0.25rem; /* optional – small spacing if needed */
   white-space: nowrap;
   padding: 0.75rem 1.25rem;
 }
