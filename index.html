@@ -1,86 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+  <meta
+    name="description"
+    content="Parklane Luxury provides tailored executive travel, private jet charter, and luxury car services for discerning clients."
+  />
   <meta name="robots" content="index, follow" />
-  <title>Plain Sight Projects | Property & People Solutions</title>
-  
+  <link rel="icon" type="image/x-icon" href="images/pl-icon.ico" />
+
+  <meta property="og:title" content="Parklane Luxury | Redefining the Art of Elite Travel" />
+  <meta
+    property="og:description"
+    content="Private jets, luxury cars, and bespoke itineraries for executives and high-net-worth clients."
+  />
+  <meta property="og:image" content="https://theparklaneluxury.com/og-image.jpg" />
+  <meta property="og:url" content="https://theparklaneluxury.com/" />
+  <link rel="canonical" href="https://theparklaneluxury.com/" />
+
+  <title>Parklane Luxury | Redefining the Art of Elite Travel</title>
+
+  <!-- Early theme application -->
   <script>
-    document.documentElement.classList.add(
-      localStorage.getItem('theme') === 'dark' ? 'dark-mode' : ''
-   );
+    (function () {
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+        }
+      } catch (e) {
+        // ignore
+      }
+    })();
   </script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <nav class="navbar">
-  <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks">
-    &#9776;
-  </button>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <header class="site-header">
+    <nav
+      class="navbar"
+      aria-label="Main navigation"
+    >
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-expanded="false"
+        aria-controls="navLinks"
+        aria-label="Toggle navigation"
+      >
+        &#9776;
+      </button>
 
-  <div class="brand">
-    <img src="images/psp logo final.png" alt="Plain Sight Projects Logo" class="logo" />
-    <span class="brand-name">Plain Sight Projects</span>
-  </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-  <button id="darkModeToggle" aria-label="Toggle dark mode">
-    <i class="fas fa-moon"></i>
-  </button>
-</nav>
+      <div class="brand">
+        <img
+          src="images/parklane-logo.svg"
+          alt="Parklane Luxury"
+          class="logo"
+          loading="lazy"
+        />
+        <span class="brand-name">The Parklane Luxury Service</span>
+      </div>
 
+      <button
+        id="darkModeToggle"
+        aria-label="Toggle dark mode"
+        type="button"
+      >
+        <i class="fas fa-moon" aria-hidden="true"></i>
+      </button>
+    </nav>
   </header>
 
-  <main>
-    <!-- Hero Section FIRST for best UX -->
-    <section id="hero">
-  <div class="hero-wrapper">
-    <div class="hero-inline">
-      <h1>
-  <span class="headline-text">Hiring, <br class="mobile-break">relocating, <br class="mobile-break">expanding .... <br class="mobile-break">We've got you - Covered.</span>
-</h1>
-      <a href="#contact" class="cta-button">Get in Touch</a>
-    </div>
-  </div>
-</section>
-
-
-    <!-- Services Section -->
-    <section id="services">
-      <div class="services-grid">
-    <div class="service-card">
-      <h3><i class="fas fa-building"></i> Real Estate</h3>
-      <p>Helping clients buy, sell, and rent residential and commercial properties with confidence.</p>
-    </div>
-    <div class="service-card">
-      <h3><i class="fas fa-user-tie"></i> Recruitment</h3>
-      <p>Connecting top talent with the right opportunities across industries and regions.</p>
-    </div>
-  </div>
+  <main id="main">
+    <!-- Hero -->
+    <section
+      id="hero"
+      class="hero"
+      aria-labelledby="hero-heading"
+    >
+      <div class="hero-wrapper container">
+        <div class="hero-row">
+          <div class="hero-content">
+            <h1
+              class="headline-text"
+              id="hero-heading"
+            >
+              Luxury<br class="headline-break" />
+              begins with peace of mind
+            </h1>
+            <a href="#contact" class="cta-button">Get in touch</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Other sections here... -->
+    <!-- Tailored Travel Section -->
+    <section
+      id="tailored-intro"
+      class="tailored-intro"
+      aria-labelledby="tailored-heading"
+    >
+      <div class="container">
+        <h2 id="tailored-heading">Tailored executive travel solutions</h2>
+      </div>
+    </section>
 
+    <!-- Services -->
+    <section
+      id="services"
+      class="services"
+      aria-labelledby="services-heading"
+    >
+      <div class="container">
+        <h2 id="services-heading" class="section-title">Our Services</h2>
+
+        <div class="services-grid">
+          <article class="service-card private-jet">
+            <div class="service-card-content">
+              <h3>Private Jet Charter</h3>
+              <p>Your jet, ready when you are.</p>
+            </div>
+          </article>
+
+          <article class="service-card luxury-car">
+            <div class="service-card-content">
+              <h3>Luxury Car Rentals</h3>
+              <p>Arrive with presence, for every occasion.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="contact"
+      aria-labelledby="contact-heading"
+    >
+      <div class="container">
+        <h2 id="contact-heading">Begin Your Journey</h2>
+        <p>Share your plans and we’ll curate the options for you.</p>
+
+        <form
+          name="contact"
+          id="contactForm"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/thank-you"
+          novalidate
+          aria-describedby="contact-description"
+          class="contact-form"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+
+          <p class="hidden">
+            <label>
+              Don’t fill this out:
+              <input name="bot-field" />
+            </label>
+          </p>
+
+          <p id="contact-description" class="visually-muted">
+            All fields are required. We respond personally to every enquiry.
+          </p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="submit-button"
+          >
+            Send
+          </button>
+
+          <p class="form-hint">
+            Or email us directly:
+            <a href="mailto:info@theparklaneluxury.com">info@theparklaneluxury.com</a>
+          </p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <script src="script.js"></script>
-  <footer>
-    <p>Stay connected</p>
-    <div class="social-links">
-      <a href="https://facebook.com/plainsightpro" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-      <a href="https://instagram.com/plainsightpro" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:info@plainsightpro.co.uk" aria-label="Email"><i class="fas fa-envelope"></i></a>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Connect with us</p>
+      <div class="social-links">
+        <a
+          href="https://instagram.com/parklane_luxury"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Parklane Luxury on Instagram"
+        >
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 Parklane Luxury. All rights reserved.</p>
     </div>
-    <p>&copy; 2025 Plain Sight Projects. All rights reserved.</p>
   </footer>
+
+  <!-- Main script (compiled from TypeScript) -->
+  <script src="main.js" defer></script>
 </body>
 </html>

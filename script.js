@@ -1,4 +1,6 @@
-// Hamburger toggle
+// ===========================
+// MOBILE NAV TOGGLE
+// ===========================
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
@@ -10,8 +12,7 @@ if (hamburger && navLinks) {
     document.body.classList.toggle('nav-open');
   });
 
-  // 👉 Close menu when a nav link is clicked
-  document.querySelectorAll('.nav-links a').forEach(link => {
+  document.querySelectorAll('.nav-links a').forEach((link) => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('active');
       document.body.classList.remove('nav-open');
@@ -20,7 +21,9 @@ if (hamburger && navLinks) {
   });
 }
 
-// Dark mode toggle with persistence
+// ===========================
+// DARK MODE TOGGLE
+// ===========================
 const darkToggle = document.getElementById('darkModeToggle');
 
 const setTheme = (mode) => {
@@ -30,24 +33,29 @@ const setTheme = (mode) => {
 
 if (darkToggle) {
   darkToggle.addEventListener('click', () => {
-    const isDark = !document.documentElement.classList.contains('dark-mode');
-    setTheme(isDark ? 'dark' : 'light');
+    const shouldBeDark = !document.documentElement.classList.contains('dark-mode');
+    setTheme(shouldBeDark ? 'dark' : 'light');
   });
 }
 
-// Scroll animation for #about and #services
-const aboutSection = document.getElementById('about');
-const servicesSection = document.getElementById('services');
+// ===========================
+// SCROLL REVEAL ANIMATION
+// ===========================
+const revealSections = document.querySelectorAll('.reveal-section');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+if (revealSections.length > 0) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    {
+      threshold: 0.18
     }
-  });
-}, {
-  threshold: 0.3
-});
+  );
 
-if (aboutSection) observer.observe(aboutSection);
-if (servicesSection) observer.observe(servicesSection);
+  revealSections.forEach((section) => observer.observe(section));
+}
