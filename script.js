@@ -1,6 +1,4 @@
-// ===========================
 // MOBILE NAV TOGGLE
-// ===========================
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
@@ -21,9 +19,7 @@ if (hamburger && navLinks) {
   });
 }
 
-// ===========================
 // DARK MODE TOGGLE
-// ===========================
 const darkToggle = document.getElementById('darkModeToggle');
 
 const setTheme = (mode) => {
@@ -38,9 +34,7 @@ if (darkToggle) {
   });
 }
 
-// ===========================
-// SCROLL REVEAL ANIMATION
-// ===========================
+// REVEAL ANIMATION
 const revealSections = document.querySelectorAll('.reveal-section');
 
 if (revealSections.length > 0) {
@@ -52,9 +46,7 @@ if (revealSections.length > 0) {
         }
       });
     },
-    {
-      threshold: 0.18
-    }
+    { threshold: 0.18 }
   );
 
   revealSections.forEach((section) => observer.observe(section));
