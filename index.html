@@ -1,259 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>Plain Sight Projects | Chelmsford Virtual Office & Registered Office Services</title>
   <meta
     name="description"
-    content="Parklane Luxury provides tailored executive travel, private jet charter, and luxury car services for discerning clients."
+    content="Professional Chelmsford registered office, virtual office and digital mailroom services for startups, small businesses and home-based companies."
   />
-  <meta name="robots" content="index, follow" />
-  <link rel="icon" type="image/x-icon" href="images/pl-icon.ico" />
 
-  <meta property="og:title" content="Parklane Luxury | Redefining the Art of Elite Travel" />
-  <meta
-    property="og:description"
-    content="Private jets, luxury cars, and bespoke itineraries for executives and high-net-worth clients."
-  />
-  <meta property="og:image" content="https://theparklaneluxury.com/og-image.jpg" />
-  <meta property="og:url" content="https://theparklaneluxury.com/" />
-  <link rel="canonical" href="https://theparklaneluxury.com/" />
-
-  <title>Parklane Luxury | Redefining the Art of Elite Travel</title>
-
-  <!-- Early theme application -->
   <script>
-    (function () {
-      try {
-        const saved = localStorage.getItem('theme');
-        if (saved === 'dark') {
-          document.documentElement.classList.add('dark-mode');
-        }
-      } catch (e) {
-        // ignore
-      }
-    })();
+    document.documentElement.classList.add(
+      localStorage.getItem('theme') === 'dark' ? 'dark-mode' : ''
+    );
   </script>
 
-  <!-- Icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
-
   <header class="site-header">
-    <nav
-      class="navbar"
-      aria-label="Main navigation"
-    >
+    <nav class="navbar">
       <button
         class="hamburger"
         id="hamburger"
         aria-expanded="false"
         aria-controls="navLinks"
-        aria-label="Toggle navigation"
+        aria-label="Open navigation menu"
       >
         &#9776;
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#services">Services</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#why-psp">Why PSP</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
       <div class="brand">
-        <img
-          src="images/parklane-logo.svg"
-          alt="Parklane Luxury"
-          class="logo"
-          loading="lazy"
-        />
-        <span class="brand-name">The Parklane Luxury Service</span>
+        <img src="images/psp logo final.png" alt="Plain Sight Projects Logo" class="logo" />
+        <span class="brand-name">Plain Sight Projects</span>
       </div>
 
-      <button
-        id="darkModeToggle"
-        aria-label="Toggle dark mode"
-        type="button"
-      >
-        <i class="fas fa-moon" aria-hidden="true"></i>
+      <button id="darkModeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
       </button>
     </nav>
   </header>
 
-  <main id="main">
-    <!-- Hero -->
-    <section
-      id="hero"
-      class="hero"
-      aria-labelledby="hero-heading"
-    >
-      <div class="hero-wrapper container">
-        <div class="hero-row">
-          <div class="hero-content">
-            <h1
-              class="headline-text"
-              id="hero-heading"
-            >
-              Luxury<br class="headline-break" />
-              begins with peace of mind
-            </h1>
-            <a href="#contact" class="cta-button">Get in touch</a>
+  <main>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Chelmsford registered office, virtual office & digital mailroom services</p>
+
+          <h1>
+            Professional Chelmsford
+            <br class="mobile-break" />
+            Virtual Office &
+            <br class="mobile-break" />
+            Registered Office Services
+          </h1>
+
+          <p class="hero-subtext">
+            See your business mail the day it arrives. Manage official mail, general mail,
+            scans, forwarding and eligible parcel collection from one secure portal.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="cta-button">Get Started</a>
+            <a href="#plans" class="secondary-button">Compare Plans</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-card">
+            <div class="panel-row">
+              <span class="panel-label">Registered Office</span>
+              <span class="panel-value">From £16.99/mo</span>
+            </div>
+            <div class="panel-row">
+              <span class="panel-label">Virtual Office</span>
+              <span class="panel-value">From £39/mo</span>
+            </div>
+            <div class="panel-row">
+              <span class="panel-label">Business Infrastructure</span>
+              <span class="panel-value">From £79/mo</span>
+            </div>
+            <hr />
+            <p class="panel-note">
+              Built for startups, small businesses and home-based companies that want
+              a more professional business presence with better mail visibility and control.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Tailored Travel Section -->
-    <section
-      id="tailored-intro"
-      class="tailored-intro"
-      aria-labelledby="tailored-heading"
-    >
-      <div class="container">
-        <h2 id="tailored-heading">Tailored executive travel solutions</h2>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section
-      id="services"
-      class="services"
-      aria-labelledby="services-heading"
-    >
-      <div class="container">
-        <h2 id="services-heading" class="section-title">Our Services</h2>
-
-        <div class="services-grid">
-          <article class="service-card private-jet">
-            <div class="service-card-content">
-              <h3>Private Jet Charter</h3>
-              <p>Your jet, ready when you are.</p>
-            </div>
-          </article>
-
-          <article class="service-card luxury-car">
-            <div class="service-card-content">
-              <h3>Luxury Car Rentals</h3>
-              <p>Arrive with presence, for every occasion.</p>
-            </div>
-          </article>
+    <!-- TRUST BAR -->
+    <section id="trust-bar">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Professional Chelmsford address</span>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-shield-alt"></i>
+          <span>Official mail visibility</span>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-envelope-open-text"></i>
+          <span>Secure mail logging & notifications</span>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-laptop"></i>
+          <span>Customer portal access</span>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section
-      id="contact"
-      class="contact"
-      aria-labelledby="contact-heading"
-    >
-      <div class="container">
-        <h2 id="contact-heading">Begin Your Journey</h2>
-        <p>Share your plans and we’ll curate the options for you.</p>
+    <!-- PLANS -->
+    <section id="plans" class="content-section reveal-section">
+      <div class="section-header">
+        <p class="section-kicker">Plans</p>
+        <h2>Choose the right level of support</h2>
+        <p>
+          Built for startups, home-based founders and small businesses that want a more
+          professional presence without missing important post.
+        </p>
+      </div>
 
-        <form
-          name="contact"
-          id="contactForm"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="/thank-you"
-          novalidate
-          aria-describedby="contact-description"
-          class="contact-form"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-
-          <p class="hidden">
-            <label>
-              Don’t fill this out:
-              <input name="bot-field" />
-            </label>
+      <div class="card-grid three-col">
+        <article class="service-card plan-card">
+          <div class="plan-badge">Tier 1</div>
+          <h3><i class="fas fa-landmark"></i> Registered Office</h3>
+          <p class="price">£16.99/month <span>or £179/year</span></p>
+          <p>
+            A simple registered office service for companies that want official HMRC and
+            Companies House mail visibility without paying for a full virtual office.
           </p>
+          <ul>
+            <li>Chelmsford registered office address</li>
+            <li>Official mail notifications</li>
+            <li>Official HMRC & Companies House scans, subject to fair use</li>
+            <li>Secure mail logging</li>
+            <li>Portal visibility</li>
+          </ul>
+        </article>
 
-          <p id="contact-description" class="visually-muted">
-            All fields are required. We respond personally to every enquiry.
+        <article class="service-card plan-card featured">
+          <div class="plan-badge">Tier 2</div>
+          <h3><i class="fas fa-briefcase"></i> Virtual Office</h3>
+          <p class="price">From £39/month</p>
+          <p>
+            A Chelmsford business address service with general mail visibility, included scans,
+            and flexible handling options for growing businesses.
           </p>
+          <ul>
+            <li>Everything in Registered Office</li>
+            <li>General business mail acceptance</li>
+            <li>Up to 5 included general mail scans per month</li>
+            <li>Scan, hold, forward or collect eligible items</li>
+            <li>Direct parcel collection option where eligible</li>
+          </ul>
+        </article>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                autocomplete="name"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Your Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                autocomplete="email"
-              />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            class="submit-button"
-          >
-            Send
-          </button>
-
-          <p class="form-hint">
-            Or email us directly:
-            <a href="mailto:info@theparklaneluxury.com">info@theparklaneluxury.com</a>
+        <article class="service-card plan-card">
+          <div class="plan-badge">Tier 3</div>
+          <h3><i class="fas fa-layer-group"></i> Business Infrastructure</h3>
+          <p class="price">From £79/month</p>
+          <p>
+            A premium managed service for founders and SMEs that want more than an address,
+            with stronger support and better admin visibility.
           </p>
-        </form>
+          <ul>
+            <li>Everything in Virtual Office</li>
+            <li>Director’s Service Address included</li>
+            <li>Priority handling</li>
+            <li>Up to 10 included general mail scans per month</li>
+            <li>Discounted admin/compliance support</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- WHY PSP -->
+    <section id="why-psp" class="content-section reveal-section alt-section">
+      <div class="section-header">
+        <p class="section-kicker">Why Plain Sight Projects</p>
+        <h2>More than a mailbox. Business infrastructure you can rely on.</h2>
+        <p>
+          We are building a premium local, visible, reliable and managed service for
+          businesses that want stronger trust than cheap virtual office providers.
+        </p>
+      </div>
+
+      <div class="card-grid two-col">
+        <article class="service-card">
+          <h3><i class="fas fa-check-circle"></i> Premium positioning you can feel</h3>
+          <p>
+            Our service is built around stronger trust, clearer statutory-mail visibility,
+            better workflow, fewer missed items and more control.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3><i class="fas fa-cogs"></i> Better workflow, tighter boundaries</h3>
+          <p>
+            Subscription covers access and visibility. Physical handling is separately
+            priced, and premium tiers absorb more support.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3><i class="fas fa-box-open"></i> Managed handling, not messy handling</h3>
+          <p>
+            Routine intake is structured, customer actions are visible, and handling follows
+            clear rules for scanning, forwarding, storage and exceptions.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3><i class="fas fa-user-shield"></i> Built for real small businesses</h3>
+          <p>
+            Ideal for startups, service businesses and home-based founders who want a more
+            professional presence without taking on full office overhead.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="content-section reveal-section">
+      <div class="section-header">
+        <p class="section-kicker">How It Works</p>
+        <h2>A simple process with better visibility</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Your mail arrives</h3>
+          <p>Your business mail is received and logged securely against your service.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>You get notified</h3>
+          <p>You receive an email notification when accepted items arrive and appear in your portal.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>You choose the next step</h3>
+          <p>Depending on your plan and the item type, you can request a scan, hold, forwarding or collection.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h3>We apply the workflow</h3>
+          <p>We follow your selected handling route through a clear, auditable process.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADD-ONS -->
+    <section id="addons" class="content-section reveal-section alt-section">
+      <div class="section-header">
+        <p class="section-kicker">Add-ons</p>
+        <h2>Flexible handling when you need it</h2>
+      </div>
+
+      <div class="card-grid two-col">
+        <article class="service-card">
+          <h3><i class="fas fa-paper-plane"></i> Mail & Forwarding</h3>
+          <ul>
+            <li>Additional general mail scans — £2.50 per item</li>
+            <li>Weekly forwarding option — £9.99/month</li>
+            <li>Postage, courier and packaging charged separately</li>
+            <li>Forwarding always prepaid</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <h3><i class="fas fa-box"></i> Handling & Storage</h3>
+          <ul>
+            <li>Letters — £1 per forwarded item</li>
+            <li>Small parcels — £2 per item</li>
+            <li>Medium parcels — £3 per item</li>
+            <li>Large items — £5–£10 plus actual courier and packaging costs</li>
+            <li>7 days free storage, then £1/day</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="content-section reveal-section">
+      <div class="section-header">
+        <p class="section-kicker">FAQ</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What is included in the Registered Office plan?</summary>
+          <p>
+            It includes your Chelmsford registered office address plus handling of official HMRC
+            and Companies House mail, with official scans included subject to fair use.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does Registered Office include general business mail?</summary>
+          <p>
+            No. General business mail acceptance starts with our Virtual Office plan.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I collect parcels directly instead of paying for forwarding?</summary>
+          <p>
+            Yes, eligible items on Virtual Office and Business Infrastructure can be set up for
+            direct collection, subject to branch and collection rules.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is postage included?</summary>
+          <p>
+            No. Postage, courier charges and packaging materials are charged separately where
+            forwarding is requested.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="content-section reveal-section contact-section">
+      <div class="section-header">
+        <p class="section-kicker">Contact</p>
+        <h2>Ready to give your business a more professional home?</h2>
+        <p>
+          Contact us to discuss Registered Office, Virtual Office or Business Infrastructure
+          services for your business.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <p><strong>Email:</strong> <a href="mailto:info@plainsightpro.co.uk">info@plainsightpro.co.uk</a></p>
+        <p><strong>Phone:</strong> [Insert phone number]</p>
+        <p><strong>Location:</strong> Chelmsford, Essex</p>
+        <a href="mailto:info@plainsightpro.co.uk" class="cta-button">Email Us</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>Connect with us</p>
-      <div class="social-links">
-        <a
-          href="https://instagram.com/parklane_luxury"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Parklane Luxury on Instagram"
-        >
-          <i class="fab fa-instagram" aria-hidden="true"></i>
-        </a>
-      </div>
-      <p>&copy; 2025 Parklane Luxury. All rights reserved.</p>
+  <footer>
+    <p>Stay connected</p>
+    <div class="social-links">
+      <a href="https://facebook.com/plainsightpro" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/plainsightpro" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:info@plainsightpro.co.uk" aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
+    <p>&copy; 2026 Plain Sight Projects. All rights reserved.</p>
   </footer>
 
-  <!-- Main script (compiled from TypeScript) -->
-  <script src="main.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
